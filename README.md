@@ -6,6 +6,8 @@ This can be useful if you want multiple wordpress servers to process a pingback 
 
 ## Example
 
+This example will ask 'the-wordpress.fr' to process N http requests to the url: 'https://the-target.com'
+
 ```typescript
 
 // build configuration object for synchronized requests
