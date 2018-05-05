@@ -1,0 +1,39 @@
+{
+  "name": "pingbackclient",
+  "version": "0.0.3",
+  "description": "Send synchronized pingback requests. Ensure that pingback requests are processed by remote servers at a specific time.",
+  "main": "./bin/index.js",
+  "types": "./bin/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7PH/PingBackClient.git"
+  },
+  "keywords": [
+    "pingback",
+    "wordpress",
+    "concurrent",
+    "request",
+    "http",
+    "layer7",
+    "ddos",
+    "dos",
+    "spam",
+    "denial",
+    "service"
+  ],
+  "author": "Benjamin Raymond <b.raymond@protonmail.ch>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7PH/PingBackClient/issues"
+  },
+  "homepage": "https://github.com/7PH/PingBackClient#readme",
+  "dependencies": {
+    "@types/node": "^10.0.4",
+    "node": "^10.0.0",
+    "sync-requests": "0.0.6"
+  },
+  "devDependencies": {}
+}
