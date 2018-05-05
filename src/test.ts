@@ -10,7 +10,7 @@ const config: SyncRequestConfig = PingBack.getRequestConfig({
         /** link to an article */
         article: 'http://the-wordpress.fr/2018-06-12/an-article/',
 
-        /** host on which to contact the xml rpc gate (default: `http://${xmlRpcHost}/xmlrpc.php`) */
+        /** host on which to contact the xml rpc gate (default xmlrpc file: `http://${xmlRpcHost}/xmlrpc.php`) */
         xmlRpcHost: 'the-wordpress.fr'
     }
 });
