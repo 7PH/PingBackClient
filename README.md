@@ -29,7 +29,7 @@ const N: number = 10;
 (async () => {
     // build requests objects
     let requests: SyncRequests = new SyncRequests();
-    for (let i = 0; i < 10; ++ i)
+    for (let i = 0; i < N; ++ i)
         requests.addRequest(config);
 
     // start pingback requests
