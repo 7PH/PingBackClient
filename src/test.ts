@@ -1,6 +1,7 @@
 import {PingBack} from "./pingbackclient/PingBack";
 import {SyncRequests, SyncRequestConfig} from "sync-requests";
 
+// build configuration object for synchronized requests
 const config: SyncRequestConfig = PingBack.getRequestConfig({
     /** url that will be fetched by the wordpress */
     target: 'https://target.com',
@@ -15,10 +16,13 @@ const config: SyncRequestConfig = PingBack.getRequestConfig({
     }
 });
 
-async function main() {
+// nb of requests to make
+const N: number = 10;
+
+(async () => {
     // build requests objects
     let requests: SyncRequests = new SyncRequests();
-    for (let i = 0; i < 10; ++ i)
+    for (let i = 0; i < N; ++ i)
         requests.addRequest(config);
 
     // start pingback requests
@@ -26,7 +30,4 @@ async function main() {
 
     // terminate pingback requests
     await requests.terminate();
-}
-
-
-main();
+})();
